@@ -1,0 +1,16 @@
+3/7日-summary：
+1.ORM原理：object relational mapping对象关系映射。实现原理，一个类对应数据库中的表，字段对应类的属性，一行数据对应类的实例。
+2.While True 与多线程的区别：while true属于语法层面，多线程属于系统层面。While true阻塞，多线程非阻塞。
+3.MTV的含义：M,model模型，与数据库进行交互/T，template模板：表现层/V，视图，业务逻辑层，用来连接model与template。
+4.Python中的数据类型：整型，浮点型，字符串，列表，元组，字典，集合，布尔值。
+5.Python2与python3的区别：
+	1.print：python2中是关键字，python3中是函数。
+	2.字符编码：
+	3.除法：python2中取整，python3中是浮点数。
+	4.类型提示(type hint):python2中没有，python3中有。
+	5.限定关键字参数：
+6.常用的包：time，requests，random，datetime，logging
+7.如何操作文件：
+8.进制转换：十进制转十六进制，除以十六取余数。
+9.同步与异步：同步，单线程/异步多线程。
+10.并行与并发：并行，多进程/并发，单进程。
