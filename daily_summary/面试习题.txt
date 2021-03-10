@@ -14,3 +14,21 @@
 8.进制转换：十进制转十六进制，除以十六取余数。
 9.同步与异步：同步，单线程/异步多线程。
 10.并行与并发：并行，多进程/并发，单进程。
+11.=,copy,deepcopy的区别？
+	=：对象引用，贴上标签
+	copy：外层容器不可变，内层可变
+	deepcopy：内层与外层容器都不可变
+12.如何根据字典的值进行排序？
+	dict1={'b':12,'a':10,'c':80}
+	valuess=sorted(dict1.items(),key=lambda x:x[1])
+	print(valuess)
+	print(dict(valuess))
+13.zip()函数的使用
+	将可迭代对象中的元素对应组成元组，并返回列表
+	eg：zip=zip([1,2,3],[4,5,6])
+	>>>[(1,4),(2,5),(3,6)]
+14.sort与sorted的区别？
+	1.作用范围：sort作用列表，sorted作用可迭代对象
+	2.sort在原有的列表上操作，无返回值；sorted返回新的列表。原列表保持不变
+15.count()函数的使用方法：
+	object.count(item)

@@ -1,0 +1,47 @@
+2021-03-07：task
+1.flask webAPI的开发
+	学习路径：
+		1.了解web api的设计原则
+		2.学习flask原生实现
+		3.学习搭配其他工具
+			请求解析webargs
+			响应格式化marshmallow
+			文档APISpec
+	REST API与Web API的区别：rest api遵循rest架构。web api：使用http协议访问api
+	基本没有完全符合REST架构风格的web API。
+	rest API将前端的http请求与数据库的CRUD进行绑定。
+	Web API：面向机器而不是用户。包括web,andriod,ios,等等。
+		长定义：可以使用HTTP协议进行访问，返回XML或JSON格式数据的API
+		无术语：给机器程序使用，通过网络访问，返回JSON或XML格式纯数据的接口。
+		列表：1.可以使用HTTP访问的URL数据集合
+			2.返回JSON或XML格式的纯数据
+			3.使用URL描述数据
+			4.使用不同的HTTP方法表示不同的操作。
+2.MongoDB数据库
+	1.启动： 由于我们已经创建了C:\MongoDB\data\db文件夹  这里就不需要再创建  否者还要创建 
+	然后在cmd进入C:\MongoDB\bin目录下（在windows资源管理器中shift+右键打开powershell也行）
+	然后执行mongod -dbpath C:\MongoDB\data\db 命令  如下图（这条命令是开启服务，它会一直运行，只要你要使用Mongodb，
+	这个窗口就不能关）。
+	2.建立连接：然后在bin目录下另外打开一个cmd  在bin目录下执行mongo命令。
+	3.数据库的CRUD:
+		显示数据库：show dbs;
+		创建C:写入一个集合stu={
+							... name:'john',
+							... age:43}
+			向数据库中插入：db.students.insert(stu)
+		查询R(read):db.students.find()
+3.pymongo的使用
+	连接数据库：1.client=MongoClient('localhost',27017)
+				2.使用URI：client=MongoClient('mongodb://localhost:27017/')
+				3.需要写入一组集合才能创建数据库
+4.网络知识。
+
+
+
+
+
+
+待解决：
+1.什么是API
+2.什么是REST
+3.Django实现rest api与django的mtv有啥区别？
