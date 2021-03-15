@@ -1,0 +1,44 @@
+2021/3/13
+1.vscode的调试
+	设置断点-运行选择调试模式。
+2.时间处理模块：time，datetime
+	time:
+		1.time.time()时间戳，可计算程序运行时间
+		2.time.localtime():结构化时间，返回一个元组
+		3.time.strftime
+	datetime:
+3.flask应用
+4.mongo连接
+5.如何处理跨域问题？
+6.pymongo的连接问题？
+7.g与localproxy的区别是什么？
+8.time.time()*1000的用处是什么？
+9.flask_web_api中如何写POST请求？
+10.@app.route()的运行机制是什么？
+11.os模块分三个层面
+	1.系统相关
+		os.name:查看当下操作系统名称
+		os.environ:查看环境变量
+	2.文件和目录操作：
+		os.getcwd:获得当前工作目录
+		os.path.realpath(__file__):获得当前脚本的绝对路径
+		os.path.dirname():获得路径的父级目录
+		os.path.abspath():获得绝对路径
+		os.path.join(path,path1,path2):将对各路径拼接到第一个路径下。
+	3.执行命令：
+		os.system
+12.json和jsonify:用于处理序列化数据。
+	转化成json字符串：json.dumps()
+	将python数据类型转化并保存在json格式的文件内：json.dump(obj,fp)
+	json转化为python
+		1.将json格式的字符串转换为python的类型：json.loads(s)
+		2.从json文件中读取数据并转换为python类型：json.load(fp)
+
+
+
+
+
+其他收获：
+	1.函数内部可以正常访问全局变量，但如果对全局变量更改时则需要申明全局变量。
+	2.cmd中退回上级目录cd ..
+	3.单行注释：CTRL+/

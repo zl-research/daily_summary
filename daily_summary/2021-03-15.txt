@@ -1,0 +1,36 @@
+2021-3-15
+1.jsonify作用的数据类型？
+
+2.flask对于post请求数据的几种处理方式？
+	post请求对于前端发送后端有三种数据类型：
+		1.放在params(发送的数据在url中）：
+			获取数据：request.args，返回<class 'werkzeug.datastructures.ImmutableMultiDict'>
+			def f():
+				data={}
+				items=request.args
+				# print(type(items),items)
+				for item in items:
+					data[item]=items.get(item)
+				jd=json.dumps(data)
+				# print(jd,type(jd))
+				return data
+		2.请求的数据在表单中
+			request.form
+			def f():
+				data={}
+				items=request.form
+				for item in items:
+					data[item]=items.get(item)
+				#jd=json.dumps(data)
+				#print(jd,type(jd))
+				print(jsonify(data)
+				return jsonify(data)
+		3.以json格式请求：
+			def f():
+				items=request.get_data()
+				data=json.dumps(items.decode('utf-8'))
+				return data
+3.json有哪几种数据类型？
+
+4.凡是涉及网络交互的都需要捕获异常。
+5.parse：解析。
